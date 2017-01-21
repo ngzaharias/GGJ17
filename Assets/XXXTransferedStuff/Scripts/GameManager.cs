@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     float Timer = 0;
     public float SpawnCound = 3;
 
+	public MapCoord Debug_PlayerCoord;
 
     test_ProceduralWorld MAP;
 
@@ -40,11 +41,12 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-
-        MAP.SetCoord(new MapCoord(
-            (int)(PlayerTransform.position.x / MAP.m_ActiveSize.x), 
-            (int)(PlayerTransform.position.z / MAP.m_ActiveSize.y)));
-
+		float halfWidth = (MAP.m_ActiveSize.x) / 2.0f;
+		float halfHeight = (MAP.m_ActiveSize.y) / 2.0f;
+		float x = Mathf.Ceil( PlayerTransform.position.x / MAP.m_ObjectOffset.x - halfWidth );
+		float y = Mathf.Ceil( PlayerTransform.position.z / MAP.m_ObjectOffset.y - halfHeight );
+		Debug_PlayerCoord = new MapCoord((int)x, (int)y);
+		MAP.SetCoord(Debug_PlayerCoord);
 
         Timer += Time.deltaTime;
 
