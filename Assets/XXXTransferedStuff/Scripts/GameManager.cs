@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
             {
                 float Angle = Random.Range(0, 360);
 
-                TempV = new Vector3(0, 0, SpawnDist);
+                TempV = new Vector3(0, 2, SpawnDist);
 
                 TempV = Quaternion.AngleAxis(Angle, Vup) * TempV;
 
@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
                 SpawnedGO.GetComponent<LynxLady>().GM = this;
             }
         }
+
 	
 	}
 }
