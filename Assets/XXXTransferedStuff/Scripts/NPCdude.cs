@@ -52,6 +52,7 @@ public class NPCdude : MonoBehaviour
             {
                 LL.SmellDude = true;
                 LL.DudeTrans = transform;
+                ((SphereCollider)other).radius *= 0.6f;
             }
         }
     }

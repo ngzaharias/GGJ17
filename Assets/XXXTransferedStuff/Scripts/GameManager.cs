@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public float SpawnCound = 3;
 
 
+    test_ProceduralWorld MAP;
+
     Vector3 TempV;
     Vector3 Vup = Vector3.up;
     float SpawnDist = 100;
@@ -23,7 +25,7 @@ public class GameManager : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-	
+        MAP = GetComponent<test_ProceduralWorld>();
 	}
 
     public void SpawnLadyAt(int Count,Vector3 SpawnPos)
@@ -38,6 +40,12 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
+
+        MAP.SetCoord(new MapCoord(
+            (int)(PlayerTransform.position.x / MAP.m_ActiveSize.x), 
+            (int)(PlayerTransform.position.z / MAP.m_ActiveSize.y)));
+
+
         Timer += Time.deltaTime;
 
         if (Timer > SpawnTime)
