@@ -76,17 +76,18 @@ public struct MapCoord
 public class test_ProceduralWorld : MonoBehaviour
 {
 	public MapCoord m_ActiveSize = new MapCoord(3,3);
+	public Vector2 m_ObjectOffset;
 
 	private GameObject m_Active;
 	private GameObject m_Inactive;
 
-	public MapCoord m_CurrentCoord { get; private set; }
-
-	public Vector2 m_ObjectOffset;
-	public int m_PoolSize = 10;
-	public GameObject[] m_Prefabs;
+	public int m_PoolExtra = 10;
+	public GameObject[] m_PoolPrefabs;
 	private Queue<GameObject> m_PoolObjects;
+
 	private Dictionary<MapCoord, GameObject> m_TileObjects;
+
+	public MapCoord m_CurrentCoord { get; private set; }
 
 	private void Awake()
 	{
@@ -134,6 +135,8 @@ public class test_ProceduralWorld : MonoBehaviour
 		MapCoord max = MapCoord.Max(m_CurrentCoord + m_ActiveSize, coord + m_ActiveSize);
 
 		MapCoord index = min;
+		Queue<MapCoord> activations = new Queue<MapCoord>();
+		Queue<MapCoord> deactivations = new Queue<MapCoord>();
 		for (; index.x < max.x; ++index.x)
 		{
 			index.y = min.y;
@@ -142,14 +145,20 @@ public class test_ProceduralWorld : MonoBehaviour
 				if (index.x >= coord.x && index.x < coord.x + m_ActiveSize.x
 				&& index.y >= coord.y && index.y < coord.y + m_ActiveSize.y)
 				{
-					ActivateCoord(index);
+					activations.Enqueue(index);
 				}
 				else
 				{
-					DeactivateCoord(index);
+					deactivations.Enqueue(index);
 				}
 			}
 		}
+
+		foreach (MapCoord deactivate in deactivations)
+			DeactivateCoord(deactivate);
+
+		foreach (MapCoord activate in activations)
+			ActivateCoord(activate);
 
 		m_CurrentCoord = coord;
 	}
@@ -157,10 +166,12 @@ public class test_ProceduralWorld : MonoBehaviour
 	private void InitialisePool()
 	{
 		m_PoolObjects = new Queue<GameObject>();
-		for (int i = 0; i < m_PoolSize; ++i)
+
+		int size = m_ActiveSize.x * m_ActiveSize.y + m_PoolExtra;
+		for (int i = 0; i < size; ++i)
 		{
-			int index = Random.Range(0, m_Prefabs.Length);
-			GameObject prefab = m_Prefabs[index];
+			int index = Random.Range(0, m_PoolPrefabs.Length);
+			GameObject prefab = m_PoolPrefabs[index];
 
 			GameObject poolObject = Instantiate(prefab);
 			poolObject.name = prefab.name;
@@ -210,23 +221,5 @@ public class test_ProceduralWorld : MonoBehaviour
 		m_PoolObjects.Enqueue(poolObject);
 
 		m_TileObjects[coord] = null;
-	}
-
-	private void DeactivateColumn(int row, int start, int stop)
-	{
-		MapCoord coord = new MapCoord(start, row);
-		for (; coord.x < stop; ++coord.x)
-		{
-			DeactivateCoord(coord);
-		}
-	}
-
-	private void DeactivateRow(int column, int start, int stop)
-	{
-		MapCoord coord = new MapCoord(column, start);
-		for (; coord.y < stop; ++coord.y)
-		{
-			DeactivateCoord(coord);
-		}
 	}
 }
