@@ -49,7 +49,7 @@ public class LynxLady : MonoBehaviour
 
                 Velocity.Normalize();
 
-                MyRigid.velocity = Velocity * (Speed * (1 + SpeedVatiant)) * DT;
+                MyRigid.velocity = Velocity * (Speed * (1 + (SpeedVatiant*((int)(LifeTime/15))))* (1 + SpeedVatiant));//* DT;
 
                 transform.forward = Velocity;
             }
