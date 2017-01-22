@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour {
     Transform MyTransform;
     Rigidbody MyRigid;
 
+
+    public GameObject GameOverScreen;
+
     public float MovmentOffsetAngle = 45;
 
     public GameObject SprayEffect;
@@ -52,6 +55,10 @@ public class PlayerMovement : MonoBehaviour {
             if (DeathCheckTImer > 0.3f)
             {
                 MYANim.SetTrigger("Tackled");
+            }
+            if (DeathCheckTImer > 1.2f)
+            {
+                GameOverScreen.SetActive(true);
             }
         }
 

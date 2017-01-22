@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour 
 {
+    public float Score = 0;
+    public Text ScoreText;
+
+
     [HideInInspector]
     public float PeopleYlevel = 0.8f;
 
@@ -30,6 +35,22 @@ public class GameManager : MonoBehaviour
 
         PlayerTransform.position = new Vector3(PlayerTransform.position.x
             , PeopleYlevel, PlayerTransform.position.z);
+
+        for (int i = 0; i < 30; ++i)
+        {
+            float Angle = Random.Range(0, 360);
+
+            TempV = new Vector3(0, 0, SpawnDist);
+
+            TempV = Quaternion.AngleAxis(Angle, Vup) * TempV;
+
+            TempV = PlayerTransform.position + TempV; 
+            Score++;
+            SpawnedGO =  Instantiate(LadyPrefab, TempV, Quaternion.identity) as GameObject;
+            SpawnedGO.GetComponent<LynxLady>().GM = this;
+        }
+
+
 	}
 
    // float SpawnRate = 0.1f;
@@ -38,6 +59,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < Count; ++i)
         {
+            Score++;
             SpawnedGO =  Instantiate(LadyPrefab, SpawnPos, Quaternion.identity) as GameObject;
             SpawnedGO.GetComponent<LynxLady>().GM = this;
         }
@@ -47,6 +69,8 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
+        Score += Time.deltaTime;
+        ScoreText.text = ((int)Score).ToString();
         
         MAP.SetCoord(PlayerTransform.position);
 
@@ -65,7 +89,7 @@ public class GameManager : MonoBehaviour
                 TempV = Quaternion.AngleAxis(Angle, Vup) * TempV;
 
                 TempV = PlayerTransform.position + TempV; 
-
+                Score++;
                 SpawnedGO =  Instantiate(LadyPrefab, TempV, Quaternion.identity) as GameObject;
                 SpawnedGO.GetComponent<LynxLady>().GM = this;
             }

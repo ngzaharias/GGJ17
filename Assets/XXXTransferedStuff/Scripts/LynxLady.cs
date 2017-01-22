@@ -7,6 +7,8 @@ public class LynxLady : MonoBehaviour
 
     float SpeedVatiant = 0.2f;
 
+    public GameObject Blurz;
+
     public GameManager GM;
 
     Transform PLayerTransform;
@@ -45,6 +47,7 @@ public class LynxLady : MonoBehaviour
         {
             if (!DiveonDude)
             {
+                Blurz.SetActive(true);
                 DiveonDude = true;
                 MYANim.SetBool("IsDead", true);
                 MYANim.SetTrigger("Dive");
