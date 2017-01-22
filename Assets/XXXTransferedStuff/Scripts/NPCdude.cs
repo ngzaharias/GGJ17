@@ -34,6 +34,7 @@ public class NPCdude : MonoBehaviour
         }
 	}
 
+    bool HasBeenHit = false;
 
     void OnTriggerEnter(Collider other) 
     {
@@ -50,6 +51,11 @@ public class NPCdude : MonoBehaviour
             LynxLady LL = other.gameObject.GetComponent<LynxLady>();
             if (LL != null)
             {
+                if (!HasBeenHit)
+                {
+                    HasBeenHit = true;
+                    transform.parent.GetComponent<Animator>().SetTrigger("Tackled");
+                }
                 LL.SmellDude = true;
                 LL.DudeTrans = transform;
                 ((SphereCollider)other).radius *= 0.8f;

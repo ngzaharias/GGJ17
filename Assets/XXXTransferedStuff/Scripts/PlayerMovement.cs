@@ -11,16 +11,20 @@ public class PlayerMovement : MonoBehaviour {
     public float MovmentOffsetAngle = 45;
 
 
+    Animator MYANim;
+
     int LadyNear = 0;
 
     // Use this for initialization
     void Start () 
     {
+        MYANim = GetComponent<Animator>();
         MyTransform = transform;
         MyRigid = GetComponent<Rigidbody>();
     }
 
     Vector3 Vup = Vector3.up;
+    float DeathCheckTImer = 0;
     void Update()
     {
         float DT = Time.deltaTime;
@@ -42,12 +46,22 @@ public class PlayerMovement : MonoBehaviour {
         if (Slowed < 0.3f)
         {
             Slowed = 0.3f;
+            DeathCheckTImer += DT;
+            if (DeathCheckTImer > 0.3f)
+            {
+                MYANim.SetTrigger("Tackled");
+            }
         }
 
         MyRigid.velocity = Velocity * Slowed;//* DT;
         if (Velocity.sqrMagnitude != 0)
         {
+            MYANim.SetBool("Running", true);
             MyTransform.forward = Velocity;
+        }
+        else
+        {
+            MYANim.SetBool("Running", false);
         }
 
     }
@@ -57,6 +71,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (other.GetComponent<LynxLady>() != null)
         {
+            other.GetComponent<Animator>().SetTrigger("Dive");
             LadyNear++;
         }
     }

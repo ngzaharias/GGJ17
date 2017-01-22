@@ -18,11 +18,13 @@ public class LynxLady : MonoBehaviour
 
     public bool SmellDude = false;
     public Transform DudeTrans;
-
+    Animator MYANim;
     float LifeTime = 0;
 	// Use this for initialization
 	void Start () 
     {
+
+        MYANim = GetComponent<Animator>();
         MyTransform = transform;
 
         MyTransform.position = new Vector3(MyTransform.position.x
@@ -33,7 +35,7 @@ public class LynxLady : MonoBehaviour
         PLayerTransform = GM.PlayerTransform;
         MyRigid = GetComponent<Rigidbody>();
 	}
-	
+    bool DiveonDude = false;
 	// Update is called once per frame
 	void Update () 
     {
@@ -41,6 +43,13 @@ public class LynxLady : MonoBehaviour
         LifeTime += DT;
         if (SmellDude)
         {
+            if (!DiveonDude)
+            {
+                DiveonDude = true;
+                MYANim.SetBool("IsDead", true);
+                MYANim.SetTrigger("Dive");
+                Destroy(gameObject, 20);
+            }
             if (DudeTrans != null)
             {
                 Velocity = DudeTrans.position - MyTransform.position;
@@ -74,6 +83,17 @@ public class LynxLady : MonoBehaviour
         }
 	
 	}
+
+    bool Hasded = false;
+    void OnBecameInvisible() 
+    {
+        if (SmellDude && !Hasded)
+        {
+            Hasded = true;
+            Destroy(gameObject, 0.2f);
+        }
+    }
+
 
 
 }
