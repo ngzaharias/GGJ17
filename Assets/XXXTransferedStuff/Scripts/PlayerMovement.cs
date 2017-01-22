@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
     public float Speed = 10;
     Vector3 Velocity = Vector3.zero;
     Transform MyTransform;
+    Rigidbody MyRigid;
 
     public float MovmentOffsetAngle = 45;
 
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
     void Start () 
     {
         MyTransform = transform;
+        MyRigid = GetComponent<Rigidbody>();
     }
 
     Vector3 Vup = Vector3.up;
@@ -32,8 +34,13 @@ public class PlayerMovement : MonoBehaviour {
         Velocity.Normalize();
         Velocity = Quaternion.AngleAxis(MovmentOffsetAngle, Vup) * Velocity;
 
-        MyTransform.position += Velocity *Speed* DT;
-        MyTransform.forward = Velocity;
+       // MyTransform.position += Velocity *Speed* DT;
+
+        MyRigid.velocity = Velocity * Speed;//* DT;
+        if (Velocity.sqrMagnitude != 0)
+        {
+            MyTransform.forward = Velocity;
+        }
 
     }
 }

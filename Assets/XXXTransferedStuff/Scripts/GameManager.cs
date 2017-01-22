@@ -3,6 +3,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
+    [HideInInspector]
+    public float PeopleYlevel = 0.8f;
 
     public Transform PlayerTransform;
     public GameObject PlayerGO;
@@ -25,6 +27,9 @@ public class GameManager : MonoBehaviour
 	void Start () 
     {
         MAP = GetComponent<test_ProceduralWorld>();
+
+        PlayerTransform.position = new Vector3(PlayerTransform.position.x
+            , PeopleYlevel, PlayerTransform.position.z);
 	}
 
     public void SpawnLadyAt(int Count,Vector3 SpawnPos)
@@ -36,10 +41,11 @@ public class GameManager : MonoBehaviour
         }
     }
 	
+
 	// Update is called once per frame
 	void Update () 
     {
-		MAP.SetCoord(PlayerTransform.position);
+        MAP.SetCoord(PlayerTransform.position);
 
         Timer += Time.deltaTime;
 
@@ -51,7 +57,7 @@ public class GameManager : MonoBehaviour
             {
                 float Angle = Random.Range(0, 360);
 
-                TempV = new Vector3(0, 2, SpawnDist);
+                TempV = new Vector3(0, 0, SpawnDist);
 
                 TempV = Quaternion.AngleAxis(Angle, Vup) * TempV;
 

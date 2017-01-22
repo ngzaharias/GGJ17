@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour {
         NewPos = Vector3.SmoothDamp(NewPos,
             TOFollow.position ,
             ref Vel,
-            0.1f, 100);
+            0.05f, 100,Time.deltaTime);
 
 
         transform.position = NewPos + FollowOffset;

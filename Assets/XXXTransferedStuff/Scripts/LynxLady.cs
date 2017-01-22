@@ -22,12 +22,14 @@ public class LynxLady : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
+        MyTransform = transform;
 
+        MyTransform.position = new Vector3(MyTransform.position.x
+            , GM.PeopleYlevel, MyTransform.position.z);
 
         SpeedVatiant = Random.Range(-SpeedVatiant, SpeedVatiant);
 
         PLayerTransform = GM.PlayerTransform;
-        MyTransform = transform;
         MyRigid = GetComponent<Rigidbody>();
 	}
 	
@@ -65,7 +67,7 @@ public class LynxLady : MonoBehaviour
 
             Velocity.Normalize();
 
-            MyRigid.velocity = Velocity * (Speed * (1+SpeedVatiant)) * DT;
+            MyRigid.velocity = Velocity * (Speed * (1 + SpeedVatiant));//* DT;
             transform.forward = Velocity;
             //MyTransform.position += Velocity *Speed* DT;
         }
