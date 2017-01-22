@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
             , PeopleYlevel, PlayerTransform.position.z);
 	}
 
+   // float SpawnRate = 0.1f;
+
     public void SpawnLadyAt(int Count,Vector3 SpawnPos)
     {
         for (int i = 0; i < Count; ++i)
@@ -45,6 +47,7 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
+        
         MAP.SetCoord(PlayerTransform.position);
 
         Timer += Time.deltaTime;

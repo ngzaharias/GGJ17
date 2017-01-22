@@ -7,6 +7,7 @@ public class SpawnTrigger : MonoBehaviour
 
     public int SpawnCount = 10;
 
+
     public Transform SpawnPos; 
 
     [HideInInspector]
@@ -17,10 +18,27 @@ public class SpawnTrigger : MonoBehaviour
         GM = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
     }
 
+    int ToSpawnCount = 0;
+    float SpawnInteval = 0.1f;
+    float Timer = 0;
+
+    void Update()
+    {
+        if (ToSpawnCount > 0)
+        {
+            Timer += Time.deltaTime;
+            if (Timer > SpawnInteval)
+            {
+                Timer = 0;
+                GM.SpawnLadyAt(1, SpawnPos.position);
+                ToSpawnCount--;
+            }
+        }
+    }
 
     public void SpawnStuff()
     {
-        GM.SpawnLadyAt(SpawnCount, SpawnPos.position);
+        
     }
 
 
@@ -28,7 +46,7 @@ public class SpawnTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SpawnStuff();
+            ToSpawnCount += SpawnCount;
         }
     }
 

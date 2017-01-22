@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour {
 
     public float MovmentOffsetAngle = 45;
 
+
+    int LadyNear = 0;
+
     // Use this for initialization
     void Start () 
     {
@@ -35,13 +38,35 @@ public class PlayerMovement : MonoBehaviour {
         Velocity = Quaternion.AngleAxis(MovmentOffsetAngle, Vup) * Velocity;
 
        // MyTransform.position += Velocity *Speed* DT;
+        float Slowed = (Speed * ( 1 - (0.06f *LadyNear)));
+        if (Slowed < 0.3f)
+        {
+            Slowed = 0.3f;
+        }
 
-        MyRigid.velocity = Velocity * Speed;//* DT;
+        MyRigid.velocity = Velocity * Slowed;//* DT;
         if (Velocity.sqrMagnitude != 0)
         {
             MyTransform.forward = Velocity;
         }
 
+    }
+
+
+    void OnTriggerEnter(Collider other) 
+    {
+        if (other.GetComponent<LynxLady>() != null)
+        {
+            LadyNear++;
+        }
+    }
+
+    void OnTriggerExit(Collider other) 
+    {
+        if (other.GetComponent<LynxLady>() != null)
+        {
+            LadyNear--;
+        }
     }
 }
 

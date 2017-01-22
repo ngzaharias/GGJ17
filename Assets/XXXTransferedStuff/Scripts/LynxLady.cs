@@ -19,6 +19,7 @@ public class LynxLady : MonoBehaviour
     public bool SmellDude = false;
     public Transform DudeTrans;
 
+    float LifeTime = 0;
 	// Use this for initialization
 	void Start () 
     {
@@ -37,7 +38,7 @@ public class LynxLady : MonoBehaviour
 	void Update () 
     {
         float DT = Time.deltaTime;
-
+        LifeTime += DT;
         if (SmellDude)
         {
             if (DudeTrans != null)
@@ -67,7 +68,7 @@ public class LynxLady : MonoBehaviour
 
             Velocity.Normalize();
 
-            MyRigid.velocity = Velocity * (Speed * (1 + SpeedVatiant));//* DT;
+            MyRigid.velocity = Velocity * (Speed * (1 + (SpeedVatiant*((int)(LifeTime/15))))* (1 + SpeedVatiant));//* DT;
             transform.forward = Velocity;
             //MyTransform.position += Velocity *Speed* DT;
         }
