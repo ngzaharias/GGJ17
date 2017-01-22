@@ -29,7 +29,7 @@ public class NPCdude : MonoBehaviour
             if(LifeTime < 0)
             {
               //  Instantiate(DeathPrefap, transform.position, transform.rotation);
-                Destroy(transform.parent.gameObject);
+                Destroy(GetComponent<Collider>());
             }
         }
 	}
@@ -52,7 +52,7 @@ public class NPCdude : MonoBehaviour
             {
                 LL.SmellDude = true;
                 LL.DudeTrans = transform;
-                ((SphereCollider)other).radius *= 0.6f;
+                ((SphereCollider)other).radius *= 0.8f;
             }
         }
     }

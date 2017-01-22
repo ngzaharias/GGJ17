@@ -12,6 +12,7 @@ public class RandomMesh : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        TheMeshRend = GetComponent<SkinnedMeshRenderer>();
         float RandI = Random.Range(0f, MeshOptions.Count);
         if (RandI != MeshOptions.Count)
         {
