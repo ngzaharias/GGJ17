@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public float MovmentOffsetAngle = 45;
 
+    public GameObject SprayEffect;
+    public Transform SpratSpawnPos;
 
     Animator MYANim;
 
@@ -73,6 +75,16 @@ public class PlayerMovement : MonoBehaviour {
         {
             other.GetComponent<Animator>().SetTrigger("Dive");
             LadyNear++;
+        }
+        NPCdude DUDE = other.gameObject.GetComponent<NPCdude>();
+        if (DUDE != null)
+        {
+            DUDE.IsSprayed = true;
+            other.gameObject.transform.localScale = DUDE.SprayedScale;
+            GameObject GO =  Instantiate(SprayEffect, SpratSpawnPos.position,
+                Quaternion.LookRotation(DUDE.transform.position - MyTransform.position)) as GameObject;
+            GO.transform.parent = SpratSpawnPos;
+            Destroy(GO, 0.4f);
         }
     }
 
