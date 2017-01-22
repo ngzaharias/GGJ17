@@ -20,7 +20,7 @@ public class SpawnTrigger : MonoBehaviour
 
     int ToSpawnCount = 0;
     float SpawnInteval = 0.1f;
-    float Timer = 0;
+    float Timer = -0.7f;
 
     void Update()
     {
