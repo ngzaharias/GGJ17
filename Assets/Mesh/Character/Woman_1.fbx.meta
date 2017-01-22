@@ -1,0 +1,1264 @@
+fileFormatVersion: 2
+guid: 504e214d717255c45a955f6971b16023
+timeCreated: 1485054231
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Head
+    100004: Head_ctrl
+    100006: Head_Nub
+    100008: Hip
+    100010: Hip_ctrl
+    100012: L_Boob
+    100014: L_Boob_ctrl
+    100016: L_Elbow
+    100018: L_Foot
+    100020: L_Foot_ctrl
+    100022: L_Inner_Brow
+    100024: L_Inner_Brow 1
+    100026: L_Knee
+    100028: L_Leg
+    100030: L_Lower_Eye
+    100032: L_Lower_Eye 1
+    100034: L_Outter_Brow
+    100036: L_Outter_Brow 1
+    100038: L_Shoulder
+    100040: L_Shoulder_ctrl
+    100042: L_Toes
+    100044: L_Upper_Eye
+    100046: L_Upper_Eye 1
+    100048: L_Wrist
+    100050: Lower_Lip
+    100052: Lower_Lip_ctrl
+    100054: Master_ctrl
+    100056: R_Boob
+    100058: R_Boob_ctrl
+    100060: R_Elbow
+    100062: R_Foot
+    100064: R_Foot_ctrl
+    100066: R_Inner_Brow
+    100068: R_Inner_Brow 1
+    100070: R_Knee
+    100072: R_Leg
+    100074: R_Lower_Eye
+    100076: R_Lower_Eye 1
+    100078: R_Outter_Brow
+    100080: R_Outter_Brow 1
+    100082: R_Shoulder
+    100084: R_Shoulder_ctrl
+    100086: R_Toes
+    100088: R_Upper_Eye
+    100090: R_Upper_Eye 1
+    100092: R_Wrist
+    100094: Spine
+    100096: Spine_ctrl
+    100098: Upper_Lip
+    100100: Upper_Lip_ctrl
+    100102: //RootNode
+    100104: Woman_1
+    400000: Chest
+    400002: Head
+    400004: Head_ctrl
+    400006: Head_Nub
+    400008: Hip
+    400010: Hip_ctrl
+    400012: L_Boob
+    400014: L_Boob_ctrl
+    400016: L_Elbow
+    400018: L_Foot
+    400020: L_Foot_ctrl
+    400022: L_Inner_Brow
+    400024: L_Inner_Brow 1
+    400026: L_Knee
+    400028: L_Leg
+    400030: L_Lower_Eye
+    400032: L_Lower_Eye 1
+    400034: L_Outter_Brow
+    400036: L_Outter_Brow 1
+    400038: L_Shoulder
+    400040: L_Shoulder_ctrl
+    400042: L_Toes
+    400044: L_Upper_Eye
+    400046: L_Upper_Eye 1
+    400048: L_Wrist
+    400050: Lower_Lip
+    400052: Lower_Lip_ctrl
+    400054: Master_ctrl
+    400056: R_Boob
+    400058: R_Boob_ctrl
+    400060: R_Elbow
+    400062: R_Foot
+    400064: R_Foot_ctrl
+    400066: R_Inner_Brow
+    400068: R_Inner_Brow 1
+    400070: R_Knee
+    400072: R_Leg
+    400074: R_Lower_Eye
+    400076: R_Lower_Eye 1
+    400078: R_Outter_Brow
+    400080: R_Outter_Brow 1
+    400082: R_Shoulder
+    400084: R_Shoulder_ctrl
+    400086: R_Toes
+    400088: R_Upper_Eye
+    400090: R_Upper_Eye 1
+    400092: R_Wrist
+    400094: Spine
+    400096: Spine_ctrl
+    400098: Upper_Lip
+    400100: Upper_Lip_ctrl
+    400102: //RootNode
+    400104: Woman_1
+    4300000: Woman_1
+    7400000: Idle Scared
+    7400002: Run
+    7400004: Dive
+    7400006: Tackled
+    7400008: Dying
+    7400010: Kill
+    7400012: Satisfied
+    7400014: Idle Casual
+    9500000: //RootNode
+    13700000: Woman_1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle Scared
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 67
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dive
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tackled
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 134
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dying
+      takeName: Take 001
+      firstFrame: 135
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Kill
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 185
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Satisfied
+      takeName: Take 001
+      firstFrame: 190
+      lastFrame: 425
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle Casual
+      takeName: Take 001
+      firstFrame: 430
+      lastFrame: 461
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Master_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/L_Leg/L_Knee/L_Foot/L_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot
+        weight: 1
+      - path: Master_ctrl/Hip/R_Leg/R_Knee/R_Foot/R_Toes
+        weight: 1
+      - path: Master_ctrl/Hip/Spine
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Head_Nub
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/L_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Lower_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Inner_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Lower_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Outter_Brow 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/R_Upper_Eye 1
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/Head/Upper_Lip
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Boob
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Master_ctrl/Hip/Spine/Chest/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/L_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Lower_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Inner_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Lower_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Outter_Brow
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/R_Upper_Eye
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/Head_ctrl/Upper_Lip_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/L_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Boob_ctrl
+        weight: 1
+      - path: Master_ctrl/Hip_ctrl/Spine_ctrl/R_Shoulder_ctrl
+        weight: 1
+      - path: Master_ctrl/L_Foot_ctrl
+        weight: 1
+      - path: Master_ctrl/R_Foot_ctrl
+        weight: 1
+      - path: Woman_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
